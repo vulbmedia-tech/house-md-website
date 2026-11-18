@@ -1,0 +1,247 @@
+/* White pages, warm neutral section bands, olive and cream type with sage accents. */
+:root {
+  --cream:#FFF6E8;
+  --espresso:#443A32;
+  --olive:#687453;
+  --sage-accent:#89947A;
+  --dark-gray:#282828;
+  --surface:#FFFFFF;
+  --section:#F5F1EB;
+  --accent-tint:#f0efdf;
+  --white:#FFFFFF;
+  --sand:var(--section);
+  --ink:var(--dark-gray);
+  --muted:var(--dark-gray);
+  --green:var(--olive);
+  --green-2:#564a3e;
+  --navy:var(--olive);
+  --sage:var(--olive);
+  --sage-soft:var(--accent-tint);
+  --line:rgba(68,58,50,.16);
+  --footer:var(--white);
+}
+body { background:var(--white);color:var(--olive); }
+body::before { background:var(--white); }
+.view > .band { background:var(--white); }
+.view > .band:nth-of-type(odd),.view > .services { background:var(--section); }
+.view > .band { background:var(--white); }
+.view > .band:nth-of-type(even),body .book {
+  background:var(--olive);
+  color:var(--cream);
+}
+/* Cream type on olive bands; cards retain their own light surfaces. */
+.view > .band:nth-of-type(even) .wrap > .stack :is(h2,p,.eyebrow),
+.view > .band:nth-of-type(even) .about-copy :is(h2,p,.eyebrow),
+.view > .band:nth-of-type(even) .approach > .stack :is(h2,p,.eyebrow),
+.view > .band:nth-of-type(even) .benefit :is(h3,p),
+body .book .book-grid > .stack :is(h2,p,.eyebrow) {
+  color:var(--cream);
+}
+.view > .band:nth-of-type(even) .btn-ghost {
+  background:transparent;color:var(--cream);border-color:var(--cream);
+}
+.view > .band:nth-of-type(even) .btn-primary {
+  background:var(--white);color:var(--olive);border-color:var(--cream);
+}
+.view > .band:nth-of-type(even) .btn:hover { background:var(--accent-tint);color:var(--olive); }
+.view > .band:nth-of-type(even) .steps li { color:var(--olive); }
+h1,h2,h3,h4,.h2,.h3,.lead,.muted,.small,.field label { color:var(--olive); }
+.eyebrow { color:var(--olive); }
+.btn-primary { background:var(--olive);color:var(--cream);border-color:var(--olive);box-shadow:0 4px 12px #68745320; }
+.btn-primary:hover { background:var(--olive);border-color:var(--sage-accent); }
+.btn-ghost,.btn-ghost-dark { background:var(--white);color:var(--olive);border-color:var(--sage-accent); }
+.btn-ghost:hover,.btn-ghost-dark:hover { background:var(--accent-tint); }
+.btn:focus-visible,a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible { outline-color:var(--olive); }
+
+.header > .wrap { background:rgba(255,255,255,.96);border-color:var(--line);box-shadow:0 10px 40px #443a3210; }
+.brand { color:var(--dark-gray); }
+.nav a { color:var(--dark-gray); }
+.brand img { background:var(--olive);padding:5px;border-radius:9px; }
+.nav a:hover,.nav a[aria-current="page"] { color:var(--olive);text-decoration-color:var(--olive); }
+.nav .btn,.nav .btn:hover { background:var(--olive);color:var(--cream); }
+.menu-btn { background:transparent;border-color:var(--sage-accent);color:var(--olive); }
+
+.hero { background:var(--white);color:var(--olive); }
+.hero::after { background:linear-gradient(90deg,#ffffff 0%,#fffffffa 25%,#ffffffe8 43%,#ffffff4d 72%,#ffffff1a 100%); }
+.view > .hero::after { content:none; }
+.view > .hero :is(h1,p,.hero-meta) { color:var(--cream); }
+.view > .hero .wrap h1 { color:#C4D0B5; }
+.view > .hero .hero-meta { border-color:rgba(255,246,232,.35); }
+.hero h1,.hero p { color:var(--olive); }
+.hero h1 { color:var(--olive); }
+.hero-meta { border-color:var(--line);color:var(--olive);opacity:1; }
+.page-hero::after { background:rgba(255,255,255,.9); }
+.photo,.tcard { box-shadow:0 12px 40px #443a3209; }
+.badge { background:var(--olive);color:var(--cream);box-shadow:0 8px 24px #443a321a; }
+.svc { background:var(--white);border-color:var(--line);box-shadow:0 5px 18px #443a3205; }
+.svc-title { color:var(--olive); }
+.chip { background:var(--accent-tint);color:var(--olive); }
+.chip-link:hover { background:#e3e5d3; }
+.svc-link,.more,.tcard h3,.tgrid.big .tcard h3 { color:var(--olive); }
+.svc-link,.more { color:var(--olive); }
+.tcat { color:var(--olive); }
+.circle { border-color:var(--accent-tint); }
+.ico { background:var(--accent-tint);color:var(--olive); }
+.member,.steps li,.value,.visit > div,.fact,.tech > div,.ba > div,.dside,.steps-row > div { background:var(--surface);border-color:var(--line); }
+.member .role,.steps-row b { color:var(--olive); }
+.steps .n { background:var(--accent-tint);color:var(--olive); }
+.steps-row .n { background:var(--olive);color:var(--cream); }
+.quote { background:var(--surface); }
+.quote::before { color:var(--sage-accent); }
+.quote blockquote,.quote figcaption,.quote figcaption b { color:var(--olive); }
+.quote figcaption { border-color:var(--line); }
+.faq summary::after { background:var(--accent-tint);color:var(--olive); }
+.faq details[open] summary::after { background:var(--olive);border-color:var(--olive);color:var(--cream); }
+.tabs { background:var(--surface);border-color:var(--line); }
+.tab { color:var(--olive); }
+.tab[aria-pressed="true"] { background:var(--olive);border-color:var(--olive);color:var(--cream); }
+.gallery figcaption { background:rgba(255,255,255,.95);color:var(--olive); }
+.creds li::before { background:var(--sage-accent); }
+.tbc { background:var(--accent-tint);color:var(--olive); }
+
+.book { background:var(--section);color:var(--olive);border-top:1px solid var(--line); }
+.book > img { display:none; }
+.book h2,.book .lead { color:var(--olive);opacity:1; }
+.book .eyebrow { color:var(--olive); }
+.ccard { background:rgba(255,255,255,.75);border-color:var(--line); }
+.ccard small { color:var(--olive); }
+.ccard span { color:var(--olive); }
+.copy { color:var(--olive);border-color:var(--sage-accent); }
+.copy:hover { background:var(--accent-tint); }
+form.enquiry { background:var(--white);border:1px solid var(--line);box-shadow:0 24px 64px #443a3210; }
+.field input,.field select,.field textarea { background:var(--surface);color:var(--olive);border-color:var(--line); }
+.field :is(input,select,textarea):focus { border-color:var(--olive);box-shadow:0 0 0 4px #89947a26; }
+.form-status { background:var(--accent-tint);color:var(--olive); }
+.footer { background:var(--olive);color:var(--cream);border-top:1px solid rgba(255,246,232,.2); }
+.f-brand img { background:var(--olive); }
+.f-brand p,.disclaimer { color:var(--olive); }
+.f-bottom { border-color:var(--line); }
+
+/* Shared appointment CTA: lounge photography and frosted glass panels. */
+body .book { isolation:isolate;border-top:0; }
+body .book > img {
+  display:block;filter:none;opacity:1;object-position:center;z-index:0;
+}
+body .book::before {
+  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:rgba(0,0,0,.4);
+}
+body .book > .wrap { position:relative;z-index:2; }
+body .book .ccard {
+  background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.3);
+  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+}
+body .book .ccard :is(small,span),body .book .copy {
+  color:var(--cream);
+}
+body .book .copy { border-color:rgba(255,255,255,.5); }
+body .book .copy:hover { background:rgba(255,255,255,.15); }
+body .book form.enquiry {
+  background:rgba(255,255,255,.86);border-color:rgba(255,255,255,.65);
+  -webkit-backdrop-filter:blur(22px);backdrop-filter:blur(22px);
+  box-shadow:0 24px 64px rgba(0,0,0,.2);
+}
+body .book .field :is(input,select,textarea) {
+  background:rgba(255,255,255,.7);
+}
+
+/* Secondary headings and descriptive copy on light surfaces. */
+body { color:var(--dark-gray); }
+h3,h4,.h3,.svc-title,.benefit h3,.member h3,.value h3,.visit h3,
+.tcard h3,.tgrid.big .tcard h3,.ba h3,form.enquiry h3,
+.fact b,.tech b,.doc b,.steps-row b,.f-col h4 {
+  color:var(--dark-gray);
+}
+p,.lead,.muted,.small,.hero p,.book .lead,.benefit p,
+.quote blockquote,.quote figcaption,.quote figcaption b,
+.member .role,.fact span,.tech span,.doc span,
+.field label,.field input,.field select,.field textarea,
+.ccard span,.f-brand p,.disclaimer {
+  color:var(--dark-gray);
+}
+.view > .band:nth-of-type(even) .steps li { color:var(--dark-gray); }
+
+/* Cream footer copy contrasts with its olive background. */
+.footer :is(h4,p,a,.disclaimer),.footer .f-brand p {
+  color:var(--cream);
+}
+.footer .f-bottom { border-color:rgba(255,246,232,.3); }
+.footer .f-brand img { background:transparent;width:200px;max-width:100%;height:auto;padding:0; }
+
+@media (hover:hover) and (pointer:fine) {
+  .svc:hover,.member:hover,.value:hover,.tcard:hover { box-shadow:0 16px 32px #443a321a; }
+  .btn:hover { box-shadow:0 8px 18px #68745330; }
+}
+@media (max-width:1000px) {
+  .header > .wrap,.nav { background:var(--white); }
+  .nav { border:1px solid var(--line);box-shadow:0 20px 50px #443a3226; }
+}
+@media (max-width:560px) {
+  .hero::after { background:linear-gradient(90deg,#fffffff5,#ffffffd9); }
+  .view > .hero::after { content:none; }
+  .page-hero::after { background:rgba(255,255,255,.92); }
+}
+
+/* Keep the banner image, overlay and content in separate layers. */
+.view > .hero { isolation:isolate; }
+.view > .hero > img { z-index:0;filter:none; }
+.view > .hero::after { content:none; }
+.view > .hero > .wrap { position:relative;z-index:2;opacity:1; }
+.view > .hero .wrap h1 { color:#C4D0B5;opacity:1;filter:none;mix-blend-mode:normal; }
+.view > .hero .wrap > p { color:var(--dark-gray);opacity:1; }
+
+/* Shared section palette; keep light cards readable inside olive bands. */
+.view > .band:nth-of-type(odd),.view > .services:nth-of-type(odd) { background:var(--white); }
+.view > .band:nth-of-type(even) { background:var(--olive);color:var(--cream); }
+.view > .band:nth-of-type(even) :is(h2,h3,h4,p,blockquote,figcaption,.eyebrow,.lead,.muted,.small,.creds,.mini,.fineprint) { color:var(--cream); }
+.view > .band:nth-of-type(even) :is(.svc,.tcard,.member,.value,.fact,.tech > div,.visit > div,.ba > div,.dside,.quote,.steps li,.steps-row > div,.note) { color:var(--dark-gray); }
+.view > .band:nth-of-type(even) :is(.svc,.tcard,.member,.value,.fact,.tech > div,.visit > div,.ba > div,.dside,.quote,.steps li,.steps-row > div,.note) :is(h2,h3,h4,p,blockquote,figcaption,b,span,.creds,.mini,.fineprint) { color:var(--dark-gray); }
+.view > .band:nth-of-type(even) :is(.svc-link,.more,.chip-link) { color:var(--olive); }
+.view > .band:nth-of-type(even) .dside .btn-primary { background:var(--olive);color:var(--cream);border-color:var(--olive); }
+.view > .hero::after { content:none; }
+.view > .hero > img { filter:none; }
+.view > .hero .wrap h1 { color:#C4D0B5;opacity:1; }
+.view > .hero .wrap > p:not(.crumb) { color:var(--dark-gray);opacity:1; }
+body .book .book-grid > .stack :is(h2,p,.eyebrow) { color:var(--cream); }
+
+/* Cream image accent on home; cream titles on inner pages. */
+#view-home > .hero::after { content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(255,246,232,.88) 0%,rgba(255,246,232,.65) 48%,rgba(255,246,232,.12) 85%); }
+.view > .page-hero .wrap h1 { color:var(--cream); }
+
+/* Inner-page title emphasis and image-only dark overlay. */
+.view > .page-hero .wrap h1 { font-weight:700; }
+.view > .page-hero::after { content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:rgba(0,0,0,.25); }
+
+/* Matching banner typography across home and inner pages. */
+.view > .page-hero .wrap > p { color:var(--cream);opacity:1; }
+#view-home > .hero .wrap h1 { color:var(--olive);font-weight:700;opacity:1; }
+#view-home > .hero .wrap > p { color:var(--dark-gray);opacity:1; }
+
+/* Inner-page descriptions override the shared dark banner copy rule. */
+.view > .hero.page-hero .wrap > p:not(.crumb) { color:var(--cream);opacity:1; }
+
+/* Treatments starts with a white catalogue, followed by olive aftercare. */
+#view-treatments > .band:nth-of-type(even) { background:var(--white);color:var(--dark-gray); }
+#view-treatments > .band:nth-of-type(even) :is(p,.lead,.muted,.small) { color:var(--dark-gray); }
+#view-treatments > .band:nth-of-type(even) :is(h2,.eyebrow) { color:var(--olive); }
+#view-treatments > .band:nth-of-type(even) .btn-primary { background:var(--olive);color:var(--cream);border-color:var(--olive); }
+#view-treatments > #aftercare { background:var(--olive);color:var(--cream); }
+#view-treatments > #aftercare .wrap > .stack :is(h2,p,.eyebrow) { color:var(--cream); }
+#view-treatments > #aftercare .value :is(h3,.mini) { color:var(--dark-gray); }
+
+/* All Treatments card actions use the sage accent. */
+#view-treatments #tgrid .tcard .more { color:var(--sage-accent); }
+
+/* Inner pages alternate white first, then olive; homepage keeps its own order. */
+.view:not(#view-home) > .band[data-section-tone="white"] { background:var(--white);color:var(--dark-gray); }
+.view:not(#view-home) > .band[data-section-tone="white"] :is(h2,.eyebrow) { color:var(--olive); }
+.view:not(#view-home) > .band[data-section-tone="white"] :is(h3,h4,p,blockquote,figcaption,.lead,.muted,.small,.creds,.mini,.fineprint) { color:var(--dark-gray); }
+.view:not(#view-home) > .band[data-section-tone="white"] .btn-primary { background:var(--olive);color:var(--cream);border-color:var(--olive); }
+.view:not(#view-home) > .band[data-section-tone="white"] .btn-ghost { background:var(--white);color:var(--olive);border-color:var(--sage-accent); }
+.view:not(#view-home) > .band[data-section-tone="olive"] { background:var(--olive);color:var(--cream); }
+.view:not(#view-home) > .band[data-section-tone="olive"] :is(h2,h3,h4,p,blockquote,figcaption,.eyebrow,.lead,.muted,.small,.creds,.mini,.fineprint) { color:var(--cream); }
+.view:not(#view-home) > .band[data-section-tone="olive"] .btn-primary { background:var(--white);color:var(--olive);border-color:var(--white); }
+.view:not(#view-home) > .band[data-section-tone="olive"] .btn-ghost { background:transparent;color:var(--cream);border-color:var(--cream); }
+.view:not(#view-home) > .band[data-section-tone] :is(.svc,.tcard,.member,.value,.fact,.tech > div,.visit > div,.ba > div,.dside,.quote,.steps li,.steps-row > div,.note) { color:var(--dark-gray); }
+.view:not(#view-home) > .band[data-section-tone] :is(.svc,.tcard,.member,.value,.fact,.tech > div,.visit > div,.ba > div,.dside,.quote,.steps li,.steps-row > div,.note) :is(h2,h3,h4,p,blockquote,figcaption,b,.creds,.mini,.fineprint) { color:var(--dark-gray); }
+.view:not(#view-home) > .band[data-section-tone] .dside .btn-primary { background:var(--olive);color:var(--cream);border-color:var(--olive); }

@@ -1,0 +1,38 @@
+/* Motion enhancements; layout and brand styling live in styles.css. */
+@media (prefers-reduced-motion: no-preference) {
+  .hero { overflow: hidden; }
+  .btn, .tab, .copy {
+    transition: transform .55s ease, background .55s ease, box-shadow .55s ease, border-color .55s ease;
+  }
+  .btn:active, .copy:active { transform: scale(.98); }
+  .svc, .member, .quote, .value, .tcard {
+    transition: transform .75s ease, box-shadow .75s ease;
+  }
+  .photo img, .tcard .ph img, .svc .ph img {
+    transition: transform 1.4s cubic-bezier(.2,.65,.3,1);
+  }
+  .field input, .field select, .field textarea {
+    transition: border-color .3s ease, box-shadow .3s ease;
+  }
+  .field :is(input, select, textarea):focus {
+    border-color: var(--sage);
+    box-shadow: 0 0 0 4px rgba(127,154,98,.12);
+  }
+  .faq details[open] .ans { animation: answer-in .75s ease both; }
+  .form-status:not([hidden]) { animation: answer-in .75s ease both; }
+  @keyframes answer-in {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .svc:hover, .member:hover, .value:hover, .tcard:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 32px rgba(30,68,41,.1);
+    }
+    .photo:hover img, .tcard:hover .ph img { transform: scale(1.035); }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 18px rgba(30,68,41,.16); }
+  }
+  @media (max-width: 1000px) {
+    .nav[data-open="true"] { animation: answer-in .5s ease both; }
+  }
+}

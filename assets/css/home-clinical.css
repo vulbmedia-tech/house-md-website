@@ -1,0 +1,41 @@
+/* Local to the homepage. All inks and surfaces come from the existing palette. */
+#view-home > .hero .wrap h1,
+#view-home .band h2,
+.page-home .book h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: -.045em;
+  line-height: 1.06;
+}
+#view-home > .hero .wrap h1 { max-width: 19ch; font-size: clamp(44px, 5.5vw, 84px); }
+#view-home .band h2 { line-height: 1.14; }
+.page-home main .chart-index {
+  padding-right: 12px;
+  border-right: 1px solid currentColor;
+  font: 500 11px/1.2 ui-monospace, monospace;
+  letter-spacing: .08em;
+}
+.page-home main .eyebrow::before { display:none; }
+#view-home > .hero .hero-kicker,
+.page-home main .eyebrow { font-family: ui-monospace, monospace; }
+#view-home #services .svc,
+#view-home #team .member .photo,
+#view-home #team .care-team,
+#view-home #home-social .social-link,
+#view-home .quotes .quote,
+#view-home .steps li,
+.page-home .book form.enquiry,
+.page-home .book .ccard { border-radius: 6px; }
+#view-home #services .svc::before { border-radius: 4px; font-family: ui-monospace, monospace; }
+#view-home #services .svc-head,
+#view-home #team .team-heading { padding-bottom: 28px; border-bottom: 1px solid var(--line); }
+#view-home .quotes .quote { border-left: 4px solid var(--sage-accent); }
+.page-home main .btn { border-radius: 6px; }
+.page-home main :is(.svc-body p,.benefit p,.member p,.form-note) { font-size:clamp(14px,1vw,16px); }
+.page-home .footer .f-top { padding-top: 28px; border-top: 1px solid currentColor; }
+.page-home .footer .f-col h4 { font-family: ui-monospace, monospace; }
+.page-home main :focus-visible, .page-home .footer :focus-visible { outline:2px solid currentColor; outline-offset:4px; }
+@media (max-width:560px) {
+  #view-home > .hero .wrap h1 { font-size:clamp(36px,8.8vw,48px); }
+  #view-home .band h2 { font-size:32px; }
+}

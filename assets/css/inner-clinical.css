@@ -1,0 +1,39 @@
+/* Shared editorial treatment for the clinic's inner pages. */
+main .page-hero .wrap h1,
+main .band h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: -.045em;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+main .page-hero .wrap h1 { font-size: clamp(2.5rem, 5.2vw, 5rem); }
+main .page-hero .wrap p { text-wrap: pretty; }
+main .band .eyebrow, main .tcat, main .page-hero .crumb,
+.footer .f-col h4 { font-family: ui-monospace, monospace; }
+main .chart-index {
+  padding-inline-end: .8em;
+  margin-inline-end: .35em;
+  border-inline-end: 1px solid currentColor;
+  font: 500 .7rem/1.2 ui-monospace, monospace;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+main .eyebrow:has(.chart-index)::before { display: none; }
+main .detail .dblock {
+  border-block-start: 1px solid var(--line);
+  padding-block-start: clamp(1rem, 2vw, 1.6rem);
+}
+main .dblock h2 .chart-index { vertical-align: middle; }
+main .list-head {
+  padding-block-end: 1.25rem;
+  border-block-end: 1px solid var(--line);
+}
+main .view :is(.tcard, .value, .dside, .photo, .ba > div),
+main .book :is(.ccard, .enquiry), main .btn { border-radius: 6px; }
+.footer .f-top { padding-block-start: 28px; border-block-start: 1px solid currentColor; }
+main :focus-visible, .footer :focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+@media (prefers-reduced-motion: no-preference) {
+  main :is(.btn, .tab, .value, .tcard) { transition-duration: .22s; }
+}
