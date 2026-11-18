@@ -2,7 +2,7 @@
 #view-home > .hero .wrap h1,
 #view-home .band h2,
 .page-home .book h2 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--display);
   font-weight: 600;
   letter-spacing: -.045em;
   line-height: 1.06;
