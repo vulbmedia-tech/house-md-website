@@ -2,7 +2,7 @@
   var siteRoot=new URL('../../',document.currentScript.src);
   var CATS={face:"Face",body:"Body",laser:"Laser & Hair Removal",hair:"Hair & Scalp",skin:"Skin Conditions"};
   var DOCS={
-    cymon:{name:"Dr. Cymon Aries A. Castillo",role:"MD, FPAAAMMI · Founder & Physician",img:"assets/images/dr-cymon.png"},
+    cymon:{name:"Dr. Cymon Aries A. Castillo",role:"MD, FPAAAMMI · Founder & Physician",img:"assets/images/dr-cymon.jpeg"},
     aira:{name:"Dr. Aira Pampolina",role:"MD, DPDS · Dermatologist",img:"assets/images/dra-aira.png"}
   };
   var BEFORE=["Book a consultation first so your doctor can check this treatment suits you.","Tell us about any medicines, allergies or recent treatments."];
